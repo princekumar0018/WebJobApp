@@ -7,6 +7,6 @@ cloudinary.v2.config({
     api_secret:process.env.CLOUDINARY_API_SECRET
 })
 
-app.listen(process.env.PORT,()=>{
-    console.log(`sever is running on ${process.env.PORT}`)
+app.listen((process.env.PORT || 4000),()=>{
+    console.log(`sever is running on ${(process.env.PORT || 4000)}`)
 })
